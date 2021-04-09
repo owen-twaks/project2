@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css
+">
+
+
+  <link rel="stylesheet" href="style.css">
+  <script src="/app.js" async></script>
+  <script src="/slider.js"></script>
+
+
+  <title>coupon-form</title>
+</head>
+<body>
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="#!"></a>
+        <img src="./images/LogoMakr-5K3tIG.png" width="126px">
+      </div>
+      <nav>
+        <div class="nav-mobile">
+          <a id="nav-toggle" href="#!"><span></span></a>
+        </div>
+        <ul class="nav-list">
+          <!-- Setting the links to #! will ensure that no action takes place on click. -->
+          <li><a href="#!">Home</a></li>
+          <li><a href="#!">About</a></li>
+          <li><a href="#!">Products</a>
+            <ul class="nav-dropdown">
+              <li><a href="#!">Digital Watch</a></li>
+              <li><a href="#!">Hybrid Watch</a></li>
+              <li><a href="#!">Touchscreen Watch</a></li>
+              <li><a href="#!">Casual Watch</a></li>
+            </ul>
+          </li>
+          <li><a href="#!">Pricing</a></li>
+          <li><a href="#!">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <div class="coupon">
+    <div class="container">
+      <h3><img src="/images/LogoMakr-5K3tIG.png" width="123" alt=""></h3>
+    </div>
+    <img src="/images/watch-7.jpg" width="250px" height="450" alt="Avatar" style="width:100%;">
+    <div class="container" style="background-color:white">
+      <h2><b>30% OFF YOUR PURCHASE</b></h2>
+      <p>Sign up to our newsletter and save 30% for you next purchase. No spam, we promise!</p>
+
+      <form onsubmit="">
+        <label style="width:30px;"><input type="text" name="coupon" id="in" class="coupon" title="Enter coupon">
+          <span id="usernameError"></span></label>
+        <input class="btn" type="button" value="Submit" onClick="validate(coupon)" /></form>
+
+      <span id="message"></span>
+      <span id="err"></span>
+
+      <div class="container">
+        <p>Use Promo Code: <span class="promo">LUCKY100</span></p>
+        <p class="expire">Expires: Jun 03, 2021</p>
+      </div>
+    </div>
+
+
+
+</body>
+
+</html>
